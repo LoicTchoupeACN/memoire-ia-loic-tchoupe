@@ -37,6 +37,7 @@
 \usepackage{multirow}
 \usepackage{eurosym}
 \usepackage{siunitx}
+\usepackage{pdfpages}
 \interfootnotelinepenalty=10000
 
 \definecolor{accenture}{HTML}{A100FF}
@@ -108,7 +109,9 @@
 
 
 \begin{document}
-\include{0_page_de_garde/page_de_garde.tex}
+
+\includepdf[pages=-]{0_page_de_garde/page_de_garde.pdf}
+
 \restoregeometry % Restaurer la géométrie précédente avant de la redéfinir pour le reste du document.
 
 % Redéfinir la géométrie pour le reste du document après la page de garde

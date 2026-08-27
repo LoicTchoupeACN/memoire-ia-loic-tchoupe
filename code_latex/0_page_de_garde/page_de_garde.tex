@@ -1,205 +1,308 @@
-\begin{tikzpicture}[remember picture, overlay] 
-\node[yshift=-2cm] at (current page.north) 
-{\includegraphics[width=\textwidth]{images/3en1bon.png}};
-\end{tikzpicture}
-\vspace*{2.0cm}
-\begin{center}
-\textbf{
-Mémoire présenté devant le jury de l'EURIA en vue de l'obtention du\\
-Diplôme d'Actuaire EURIA\\
-et de l'admission à l'Institut des Actuaires
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Le contenu de ce template s'inspire de:
+
+%"Guide d'utilisation de la classe rnti version 3 pour articles de la Revue des Nouvelles Technologies de l'Information (Cépadués)"
+
+%Auteur: Gilbert Ritschard
+%Affiliation: Département d'économétrie, Université de Genève
+%gilbert.ritschard@themes.unige.ch
+%http://www.antsearch.univ-tours.fr/rnti/
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Template réalisé par
+
+%Guillaume FRANQUET
+%g.franquet@gmail.com
+
+%et
+
+%Martial PHÉLIPPÉ GUINVARCH
+%martialphelippeguinvarch@sfr.fr
+
+%Version: 1
+%Date: Août 2011
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+% Tout ce qui est compris entre le caractère % et une fin de ligne est un
+% commentaire ignoré par LaTeX
+
+% Un fichier LaTeX commence par une commande \documentclass qui déclare le type
+% de document
+
+\documentclass[a4paper,11pt,twoside] {book}
+
+%openright à la place de openany dans le documentclass pour commencer les chapitres sur la page de droite.
+
+% Ici, et jusqu'au \begin{document} ci-dessous, c'est le préambule : on y met
+% les déclarations de style, les définitions de macros, etc.
+
+%%%% Personnalisation du style défaut
+
+
+
+%\usepackage{aecompl} 							%améliore la qualité de la police sous Latex => DVIPS => PS2PDF
+\usepackage{hyperref}
+			\hypersetup{backref=true,    	%permet d'ajouter des liens dans...
+     				pagebackref=true,				%...les bibliographies
+     				hyperindex=true, 				%ajoute des liens dans les index.
+     				colorlinks=true, 				%colorise les liens
+     				breaklinks=true, 				%permet le retour à la ligne dans les liens trop longs
+     				urlcolor= black, 				%couleur des hyperliens
+     				linkcolor= blue, 				%couleur des liens internes
+     				bookmarks=true,  				%créé des signets pour Acrobat
+     				bookmarksopen=false,    %si les signets Acrobat sont créés,
+                                    %les afficher complètement.
+     				citecolor=black,
+    				linkcolor=black,
+    				filecolor=black,
 }
-\end{center}
 
-\vspace{0.8cm}
+\usepackage[utf8]{inputenc} 	%permet d'utiliser les caractères ISO 8859-1, ce qui signifie que vous pouvez taper directement
+																%les caractères accentués. En effet, sans cette extension, il est nécessaire d'utiliser une
+																%syntaxe particulière pour l'affichage des accents
+\usepackage[french]{babel} 			% Pour adopter les règles de typographie française
 
-\begin{center}
-Septembre 2026
-\end{center}
 
-\vspace{1cm}
+\usepackage[T1]{fontenc} 				% Pour que LaTeX comprenne les caractères accentués ;
+                         				% norme iso-8859, cela risque de ne pas marcher avec
+                         				% des fichiers créés sous Windows
 
-Par : Loïc TCHOUPE\\
+%\usepackage{amsmath} % Les bibliothèques LaTeX de l'American
+                     	% Mathematical Society sont pleines de macros
+                     	% intéressantes (voire indispensables).
+\usepackage{graphicx}
+%\usepackage{makeidx}
+%\usepackage{enumerate}
+\usepackage{array} 		 % gestion des tableaux
+%\usepackage{multirow} % fusion de cellule dans les tableaux
+%\usepackage{color}
+%\definecolor{gris}{gray}{0.5}
+%\usepackage{amssymb}
+%\usepackage{eurosym}
+\usepackage{fancyhdr}		%Gestion des en-têtes et pieds de page du document
+		\fancyhead{}
+		\fancyfoot{}
+		\renewcommand{\footrulewidth}{0.2pt}
+		\fancyhead[RE]{\leftmark}
+		\fancyhead[LE]{\thepage}
+		\fancyhead[LO]{\rightmark}
+		\fancyhead[RO]{\thepage}
+		\fancyfoot[LO] {\scriptsize{\AuteurEuria }}
+		\fancyfoot[RE] {\scriptsize{Mémoire \euria}}
+		%\renewcommand{\headrulewidth}{0.4pt}
+\usepackage{geometry}
+\usepackage{xspace}
 
-Titre : A définir
 
-\vspace{0.8cm}
 
-Confidentialité : NON
+%%%% Déclaration d'environnements
 
-\begin{center}
-\textcolor{blue}{
-\textit{
-Les signataires s'engagent à respecter la confidentialité indiquée ci-dessus
-}
-}
-\end{center}
+% Gestion mots clefs
+\newenvironment{keywords}{
+       \list{}{\advance\topsep by0.35cm\relax
+       \leftmargin=1cm
+       \labelwidth=0.35cm
+       \listparindent=0.35cm
+       \itemindent\listparindent
+       \rightmargin\leftmargin}\item[\hskip\labelsep
+                                     \bfseries Mots clefs:]}
+     {\endlist}
 
-\vspace{0.8cm}
+\newenvironment{keywordsUK}{
+       \list{}{\advance\topsep by0.35cm\relax
+       \leftmargin=1cm
+       \labelwidth=0.35cm
+       \listparindent=0.35cm
+       \itemindent\listparindent
+       \rightmargin\leftmargin}\item[\hskip\labelsep
+                                     \bfseries Keywords:]}
+     {\endlist}
+% Fin Gestion mots clefs
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% JURY IA + ENTREPRISE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\clearemptydoublepage}{%
+\newpage{\pagestyle{empty}\cleardoublepage}}
+\newcommand{\euria}{\href{http://www.univ-brest.fr/index.php?page=affiche_composante&object=euria}{EURIA}\xspace}
+\newcommand{\EURIA}{\href{http://euria.univ-brest.fr}{EURo Institut d'Actuariat}\xspace}
 
-\noindent
-\begin{minipage}[t]{0.48\textwidth}
+%%%% déclarations pour le titre
 
-\textbf{\textit{
-Membre présent du jury de l'Institut des Actuaires :
-}}
+%\makeindex
 
-\vspace{0.3cm}
+%Préambule du titre
+\def\NomJuryIA{Nom Jury IA1}
+\def\NomJuryA{Nom Jury A}
+\def\NomJuryB{Nom Jury B}
+\def\NomJuryC{Nom Jury C}
+\def\NomJuryD{Nom Jury D}
+\def\NomJuryE{Nom Jury E}
+\def\AuteurEuria{Loic TCHOUPE}
+\def\TitreEuria{A Définir}
+\def\DateSoutenance{le \today}
+\def\TitreAdjust{4.6mm} 				%ajuste les espaces entre les blocs de la page de garde
+\def\confidentialite{Non} 			%ou Oui
+\def\dureeconfidentialite{}  		%ou {- (Durée: 1 an)} ou { - (Durée: 2 ans)} si oui
+\def\entreprise{Nom entreprise}
+\def\directeurmemoire{Makram Ben Dbabis}
+\def\invite{Chuck Norris}
 
-Nom Jury IA
 
-\vspace{0.3cm}
+%%%% fin du préambule, on passe au contenu : tout le texte entre
+%%%% \begin{document} et \end{document}
 
-Signature :
+\begin{document}
 
-\end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DEBUT PAGE DE GARDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+\pagestyle{empty}
+
+%\sffamily % pour avoir une police proche de celle de word sur la page de garde
+
+\enlargethispage{3cm}
+
+\addtolength{\textwidth}{2cm}
+\addtolength{\oddsidemargin}{ 0cm}
+\setlength{\parindent}{0mm} %décalage paragraphe
+
+\large
+\vspace*{-2cm}
+
+
+%\includegraphics[width = \textwidth]{Graphique/3en1.png}
+\includegraphics[width = \textwidth]{../images/3en1.png}
 \hfill
-\begin{minipage}[t]{0.48\textwidth}
+\vspace{\TitreAdjust}
 
-\textbf{\textit{
-Entreprise :
-}}
 
-Accenture France
-
-\vspace{0.3cm}
-
-Signature :
-
-\end{minipage}
-
-\vspace{0.8cm}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% JURY EURIA + DIRECTEUR
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\noindent
-\begin{minipage}[t]{0.48\textwidth}
-
-\textbf{\textit{
-Membres présents du jury de l'EURIA :
-}}
-
-\vspace{0.3cm}
-
-Nom Jury A\\
-Nom Jury B\\
-Nom Jury C\\
-Nom Jury D\\
-Nom Jury E
-
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.48\textwidth}
-
-\textbf{\textit{
-Directeur de mémoire en entreprise :
-}}
-
-Gaylord Legris
-
-\vspace{0.3cm}
-
-Signature :
-
-\vspace{0.6cm}
-
-\textbf{\textit{
-Invité :
-}}
-
-Lionel Aldebert
-
-\vspace{0.3cm}
-
-Signature :
-
-\end{minipage}
-
-\vfill
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% AUTORISATION DE PUBLICATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\begin{minipage}[c][1.5cm][c]{1\linewidth}  %%% si textwidth mal centré avec la date qui suit
 \begin{center}
-
-\textbf{\textit{
-Autorisation de publication et de mise en ligne sur un site de diffusion
-de documents actuariels
-}}
-
-\vspace{0.2cm}
-
-\textit{
-(après expiration de l'éventuel délai de confidentialité)
-}
-
+\textbf{Mémoire présenté devant le jury de l'\euria en vue de l'obtention du\\
+				Diplôme d'Actuaire \euria \\
+				et de l'admission à l'Institut des Actuaires}
 \end{center}
 
-\vspace{0.8cm}
+\end{minipage}
 
-\noindent
-\begin{minipage}[t]{0.48\textwidth}
+\vspace{\TitreAdjust}
+\begin{center}
+\DateSoutenance
+\end{center}
 
-Signature du responsable entreprise :
 
-\vspace{0.2cm}
 
+
+\vspace{\TitreAdjust}
+\begin{minipage}[c][2.5cm][c]{1\textwidth}
+Par\space\space\space: \AuteurEuria \\
+Titre: \TitreEuria
+\end{minipage}
+
+
+\vspace{\TitreAdjust}
+\begin{minipage}[c][0.1cm][c]{1\textwidth}
+Confidentialité: \confidentialite \space \dureeconfidentialite
+\end{minipage}
+
+
+\begin{center}
+\textcolor{blue}{\textit{Les signataires s'engagent à respecter la confidentialité indiquée ci-dessus}}
+\end{center}
+
+
+\vspace{\TitreAdjust}
+\begin{minipage}[c][2.5cm][t]{0.50\textwidth}
+\textit{\textbf{Membre présent du jury de l'Institut\\
+des Actuaires :}}\\
+\NomJuryIA \\
+Signature:
+\end{minipage}
+~%
+\begin{minipage}[c][2.5cm][t]{0.46\textwidth}
+\textit{\textbf{Entreprise:}}\\
+\entreprise \\
+Signature:
+\end{minipage}
+
+\vspace{\TitreAdjust}
+\begin{minipage}[t][4cm][t]{0.50\textwidth}
+\textbf{\textit{Membres présents du jury de l'\euria~:}}\\
+\NomJuryA\\
+\NomJuryB\\
+\NomJuryC\\
+\NomJuryD\\
+\NomJuryE\\
+\end{minipage}
+~%
+\begin{minipage}[t][4cm][t]{0.46\textwidth}
+\textbf{\textit{Directeur de mémoire en entreprise:}}\\
+\directeurmemoire\\
+Signature:\\
+
+\textit{\textbf{Invité:}}\\
+\invite\\
+Signature:
+\end{minipage}
+\vspace{\TitreAdjust}
+
+
+\begin{minipage}[c][1.5cm][c]{1\linewidth}
+\begin{center}
+\textit{\textbf{Autorisation de publication et de mise en ligne sur un site de diffusion de documents actuariels }\\
+ (après expiration de l'éventuel délai de confidentialité)}
+\end{center}
+\end{minipage}
+\vspace{\TitreAdjust}
+
+\begin{minipage}[c][0.5cm][t]{0.48\textwidth}
+Signature du responsable entreprise:
+\end{minipage}
+~%
+\begin{minipage}[c][0.5cm][t]{0.48\textwidth}
+Signature du candidat:
+\end{minipage}
+\vspace{\TitreAdjust}
+~%
 \fbox{
-\begin{minipage}[c][1.5cm][c]{0.95\textwidth}
+\begin{minipage}[c][1cm][c]{0.35\textwidth}
+\hfill
+\end{minipage}}
+~%
+\begin{minipage}[c][1cm][c]{0.083\textwidth}
 \hfill
 \end{minipage}
-}
-
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.48\textwidth}
-
-Signature du candidat :
-
-\vspace{0.2cm}
-
+~%
 \fbox{
-\begin{minipage}[c][1.5cm][c]{0.95\textwidth}
+\begin{minipage}[c][1cm][c]{0.35\textwidth}
 \hfill
-\end{minipage}
-}
+\end{minipage}}
+\vspace{\TitreAdjust}
 
-\end{minipage}
 
-\vspace{1cm}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% COORDONNÉES EURIA
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+\scriptsize{
+\begin{tabular}{|m{40mm}|m{40mm}|m{40mm}}
+EURIA & 6, avenue le Gorgeu & T +33 (0)2 98 01 66 55  \\
+ EURo Institut  & CS 93837 &  \href{mailto:euria@univ-brest.fr}{euria@univ-brest.fr}   \\
+ d'Actuariat & 29238 Brest Cedex 3 & \\
+	\end{tabular}}
+\end{flushright}
 
-\begin{center}
+\newpage
+\thispagestyle{empty}
 
-\scriptsize
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FIN PAGE DE GARDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{tabular}{|m{35mm}|m{45mm}|m{45mm}|}
-\hline
 
-EURIA &
-6 avenue Le Gorgeu &
-T +33 (0)2 98 01 66 55 \\
-
-EURo Institut d'Actuariat &
-CS 93837 &
-euria@univ-brest.fr \\
-
-&
-29238 Brest Cedex 3 &
-\\
-
-\hline
-
-\end{tabular}
-
-\end{center}
+\end{document}
