@@ -1,0 +1,68 @@
+Plan détaillé du mémoire
+
+Reverse stress tests dans l’ORSA de l’UMR
+Problématique
+Quels scénarios économiques plausibles feraient franchir à l’UMR ses seuils d’appétence au risque, en vision FRPS et en vision Solvabilité 2 ? 
+Comment les identifier, à un coût de calcul maîtrisé, sur le modèle ALM, et quelles décisions de pilotage permettent de s’en prémunir ?
+
+0. Contexte
+    0.1 La retraite en France
+    0.2 Les produits de retraite supplémentaire
+    0.3 Présentation de l’UMR
+    0.4 Problématique
+1. Cadre réglementaire
+    1.1 Le régime FRPS
+        1.1.1 Origine et passage de Solvabilité 2 au FRPS
+        1.1.2 Exigence de marge de solvabilité
+        1.1.3 Fonds propres éligibles
+        1.1.4 Les tests de résistance réglementaires
+        1.1.5 Limites du cadre FRPS
+    1.2 Solvabilité 2 et vision groupe
+        1.2.1 Les trois piliers
+        1.2.2 Le bilan économique
+        1.2.3 Le SCR en formule standard
+        1.2.4 Intégration de l’UMR dans le Groupe VYV
+    1.3 L’ORSA et l’appétence au risque
+        1.3.1 Le processus ORSA
+        1.3.2 Appétence au risque et seuils
+        1.3.3 Place des tests de résistance dans l’ORSA
+2. Le modèle ALM
+    2.1 Architecture du modèle
+        2.1.1 Objectifs et structure générale
+        2.1.2 Horizon et pas de projection
+    2.2 Présentation des données
+        2.2.1 Données de passif
+        2.2.2 Données d’actif
+        2.2.3 Données de marché et hypothèses
+        2.2.4 Retraitements et confidentialité
+    2.3 Modélisation de l’actif
+        2.3.1 Classes d’actifs
+    2.4 Modélisation du passif****
+        2.4.1 Présentation des model point
+    2.5 Calcul des indicateurs (François Rey)
+        2.5.1 Indicateur 1 (à définir)
+        2.5.2 Indicateur 2 (à définir)
+        2.5.3 Indicateur 3 (à définir)
+        2.5.4 Projection des indicateurs sur l’horizon de l’ORSA
+    2.6 Validation et limites
+        2.6.1 Contrôles de cohérence et test de martingalité
+        2.6.2 Comparaison avec les chiffres publiés
+        2.6.3 Limites du modèle
+3. Les reverse stress tests
+    3.1 Définitions
+    3.2 Formulation mathématique
+    3.3 Théorie de l'optimisation
+    3.4 Reverse stress test bivarié et univarié   
+4. Méthodologie
+    4.1 Calibrage et génération des scénarios
+        4.1.1 Approche historique(analyse empirique des variations observées)
+        4.1.2 Approche par modèle
+5. Résultats
+    5.1 Scénarios de défaillance
+    5.2 Comparaison FRPS / Solvabilité 2
+    5.3 Sensibilité des résultats
+6. Pilotage
+    6.1 Leviers de pilotage
+    6.2 Efficacité des décisions
+    6.3 Intégration du module
+Conclusion
