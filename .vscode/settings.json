@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.jj": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/c:\\Users\\ltchoupe-ext\\repositories\\memoire-ia-loic-tchoupe\\code_latex\\0_page_de_garde\\page_de_garde.aux": true,
+        "**/c:\\Users\\ltchoupe-ext\\repositories\\memoire-ia-loic-tchoupe\\code_latex\\0_page_de_garde\\page_de_garde.log": true,
+        "**/c:\\Users\\ltchoupe-ext\\repositories\\memoire-ia-loic-tchoupe\\code_latex\\0_page_de_garde\\page_de_garde.gz": true,
+        "**/c:\\Users\\ltchoupe-ext\\repositories\\memoire-ia-loic-tchoupe\\code_latex\\0_page_de_garde\\page_de_garde.out": true,
+        "**/c:\\Users\\ltchoupe-ext\\repositories\\memoire-ia-loic-tchoupe\\code_latex\\main.aux": true,
+        "**/c:\\Users\\ltchoupe-ext\\repositories\\memoire-ia-loic-tchoupe\\code_latex\\main.log": true,
+        "**/c:\\Users\\ltchoupe-ext\\repositories\\memoire-ia-loic-tchoupe\\code_latex\\main.gz": true,
+        "**/c:\\Users\\ltchoupe-ext\\repositories\\memoire-ia-loic-tchoupe\\code_latex\\main.out": true
+    }
+}
