@@ -45,7 +45,7 @@
 \usetikzlibrary{shapes, arrows, positioning}
 \setlist[itemize]{itemsep=8pt, topsep=2pt} % Applique ces réglages à toutes les listes itemize
 \setcounter{secnumdepth}{3} %pour que le niveau 3 (subsubsection soit numeroté)
-\setcounter{tocdepth}{2} %pour que le niveau 2 (subsection apparaisse dans la table des matieres)
+\setcounter{tocdepth}{5} %pour que le niveau 2 (subsection apparaisse dans la table des matieres)
 % Personnalisation des titres de chapitres
 % Met le mot "Chapitre" et son numéro en gras et très grand (\Huge)
 % et le titre du chapitre également en \Huge
@@ -149,7 +149,7 @@
 \cleardoublepage
 \begin{singlespace}
     \raggedbottom
-    \setcounter{tocdepth}{1}
+    \setcounter{tocdepth}{5}
     \tableofcontents
 \end{singlespace}
 \clearpage
@@ -187,6 +187,9 @@
 \include{2_chapitres/chapitre2}
 \include{2_chapitres/chapitre3}
 \include{2_chapitres/chapitre4}
+
+\include{2_chapitres/chapitre5}
+
 
 \include{2_chapitres/conclusion}
 

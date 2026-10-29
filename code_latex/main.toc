@@ -1,19 +1,52 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{Résumé}{3}{chapter*.2}%
-\contentsline {chapter}{Abstract}{4}{chapter*.3}%
-\contentsline {chapter}{Remerciements}{5}{chapter*.4}%
-\contentsline {chapter}{Synthèse}{6}{chapter*.5}%
-\contentsline {chapter}{Synthesis}{7}{chapter*.6}%
+\contentsline {chapter}{Résumé}{4}{chapter*.2}%
+\contentsline {chapter}{Abstract}{5}{chapter*.3}%
+\contentsline {chapter}{Remerciements}{6}{chapter*.4}%
+\contentsline {chapter}{Synthèse}{7}{chapter*.5}%
+\contentsline {chapter}{Synthesis}{8}{chapter*.6}%
 \contentsline {chapter}{Introduction}{1}{chapter*.7}%
-\contentsline {chapter}{\numberline {1}Contexte réglementaire et modélisation en assurance vie}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Les spécificités des produits d'assurance vie épargne}{2}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Principes fondamentaux du contrat d'assurance vie}{2}{subsection.1.1.1}%
-\contentsline {chapter}{\numberline {2}Chapitre 2}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Section 1}{3}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Chapitre 3}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Section 1}{4}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Chapitre 4}{5}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Section 1}{5}{section.4.1}%
-\contentsline {chapter}{Conclusion}{6}{chapter*.8}%
-\contentsline {chapter}{Annexes}{7}{chapter*.9}%
-\contentsline {chapter}{Bibliographie}{8}{chapter*.9}%
+\contentsline {chapter}{\numberline {1}Contexte}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}La retraite en France}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Le groupe VyV et UMR}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}La problématique : le Risk appetite framework}{2}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Cadre réglementaire}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Le régime FRPS }{4}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Origine et passage de Solvabilité 2 au FRPS}{4}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Exigence de marge de solvabilité}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Fonds propres éligibles}{4}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Les tests de résistance réglementaires}{4}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Limites du cadre FRPS}{4}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Solvabilité 2 : Pilier 1}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1} Calcul du Best Estimate}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Le bilan économique}{4}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Le SCR en formule standard}{4}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Solvabilité 2 : ORSA}{4}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Le processus ORSA}{4}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Appétence au risque et seuils}{4}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Place des tests de résistance dans l'ORSA}{4}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {3}Le modèle ALM}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Structure générale du modèle}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2} Modélisation de l’actif}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1} Données économiques en input du modèle}{6}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Classes d'actifs modélisés}{6}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Stratégie d'investissement}{6}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Modélisation du passif}{6}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Stratégie de participation aux bénéfices et Compte de résultat}{6}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Indicateurs en sortie}{6}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Indicateur 1 (à définir)}{6}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Indicateur 2 (à définir)}{6}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Indicateur 3 (à définir)}{6}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Projection des indicateurs sur l’horizon de l’ORSA}{6}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Validation et limites}{6}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Principaux contrôles associés au modèle}{6}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Limites du modèle}{6}{subsection.3.6.2}%
+\contentsline {chapter}{\numberline {4}Problématique et méthodologie retenue}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Présentation du risk appetite chez UMR}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Présentation des scénarios ORSA UMR 2026}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Méthodologie retenue}{7}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Résultats et discussion}{8}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Présentation des résultats}{8}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Zoom sur les scenarios problématiques}{8}{section.5.2}%
+\contentsline {chapter}{Conclusion}{9}{chapter*.8}%
+\contentsline {chapter}{Annexes}{10}{chapter*.9}%
+\contentsline {chapter}{Bibliographie}{11}{chapter*.9}%
