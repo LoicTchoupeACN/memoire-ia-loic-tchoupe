@@ -1,16 +1,95 @@
-\chapter{Contexte}
+\chapter{Contexte (pourquoi pas donner ctx UMR/Vyv)}
 \label{chap:contexte}
 
-\section{La retraite en France}
+Dans cette partie, nous présentons le contexte de ce mémoire.
+Nous commençons par présenter le contexte général de la retraite en France, puis nous présentons le groupe VyV et UMR, ainsi que la problématique du Risk Appetite Framework (RAF) et les objectifs de ce mémoire.
+
+\section{La retraite en France et le groupe vyv (oui mais avant de parler d'UMR et vyv)}
 \label{sec:retraite_france}
 
-\section{Le groupe VyV et UMR}
+\subsection{Histoire de la retraite en France (à supprimer)}
+\label{subsec:histoire_retraite}
+
+L'histoire de la retraite en France remonte au XVII\textsuperscript{e} siècle, mais elle ne concerne alors que quelques métiers. Jusqu'au XIX\textsuperscript{e} siècle, une personne trop âgée pour travailler vit surtout de son épargne ou de secours \cite{cor2022}. Il faut attendre 1945 pour qu'une retraite obligatoire s'installe durablement pour l'ensemble des salariés. À partir des années 1990, ses règles sont progressivement durcies.
+
+\subsubsection{Des caisses réservées à quelques métiers (1673-1909)}
+
+Le plus ancien dispositif concerne les marins de l'État. En 1673, Colbert crée un fonds financé par une retenue sur leur solde, qui verse d'abord une pension aux blessés. Ce régime s'étend aux marins de commerce en 1709. En 1784, une ordonnance distingue la pension d'invalidité de la pension de vieillesse, versée à partir de 60 ans sous condition de durée de services \cite{cor2022}.
+
+L'État s'occupe ensuite de ses propres agents. La loi du 22 août 1790 prévoit une pension après trente ans de service, mais elle est peu appliquée. Les militaires obtiennent un droit à pension en 1831. La loi du 9 juin 1853 remplace les caisses des administrations par un régime commun aux fonctionnaires de l'État : le droit s'ouvre à 60 ans après trente ans de service, contre une retenue de 5\,\% sur le traitement.
+
+Dans le privé, les premières caisses naissent dans les grandes entreprises, dès 1820 dans les mines et à partir de 1850 dans les chemins de fer. La pension y ressemble à une récompense : l'exploitant décide de l'accorder, et un mineur qui quitte sa compagnie perd ses droits. Les salariés réclament des garanties et obtiennent deux lois, celle du 29 juin 1894 pour les mineurs et celle du 21 juillet 1909 pour les cheminots, qui rendent l'affiliation obligatoire. Les cheminots du service actif peuvent alors partir à 50 ans après 25 ans de service \cite{cor2022}.
+
+Pour le reste de la population, l'État mise sur l'épargne volontaire. La loi du 18 juin 1850 crée une caisse de retraite garantie par l'État, qui deviendra la Caisse nationale de retraite pour la vieillesse (CNRV). Pensée pour les salariés pauvres, elle attire surtout l'épargne de la bourgeoisie. La loi du 14 juillet 1905 ajoute une assistance obligatoire pour les vieillards privés de ressources.
+
+\subsubsection{Deux tentatives de régime obligatoire (1910-1944)}
+
+La loi du 5 avril 1910 sur les retraites ouvrières et paysannes (ROP) crée le premier régime national obligatoire, fondé sur la capitalisation. Elle vise les salariés sous un plafond de revenu et fixe l'âge de la retraite à 65 ans. La CGT rejette cet âge avec le slogan \og Non à la retraite pour les morts ! \fg{}. En 1911, un arrêt de la Cour de cassation annule de fait le caractère obligatoire des cotisations salariales. L'âge passe à 60 ans en 1912, sans régler le problème : en 1923, seuls 21\,\% des inscrits comme assurés obligatoires cotisent \cite{cor2022}.
+
+Les lois du 5 avril 1928 et du 30 avril 1930 sur les assurances sociales reprennent l'idée. Elles couvrent la maladie, la maternité, l'invalidité, le décès et la vieillesse pour les salariés sous un plafond de rémunération. L'employeur doit désormais affilier ses salariés, sous peine d'amende. La retraite reste financée par capitalisation, et c'est sur ce point que le système cède. L'inflation de 1918 à 1926, puis celle qui reprend à partir de 1936, réduit fortement la valeur réelle des sommes accumulées, faute de mécanisme d'indexation \cite{saly2020,valat2022}.
+
+La loi du 14 mars 1941, adoptée sous le régime de Vichy, fait basculer l'assurance vieillesse vers la répartition : les cotisations de l'année paient les pensions de la même année. Elle crée aussi l'allocation aux vieux travailleurs salariés (AVTS), de 3\,600 francs par an. Le montant reste dérisoire. D'après \cite{valat2022}, ces 10 francs par jour permettent d'acheter trois œufs à Paris au cours officiel de l'hiver 1944, et un seul au marché noir.
+
+\subsubsection{1945 : la Sécurité sociale et le choix de la répartition}
+
+Le programme du Conseil national de la Résistance, adopté le 15 mars 1944, réclame \og une retraite permettant aux vieux travailleurs de finir dignement leurs jours \fg{}. L'ordonnance du 4 octobre 1945 organise la Sécurité sociale, puis celle du 19 octobre crée le régime général d'assurance vieillesse. Alexandre Parodi, ministre du Travail, porte ces textes avec Pierre Laroque, premier directeur général de la Sécurité sociale. Ambroise Croizat, qui succède à Parodi en novembre 1945, conduit leur mise en place.
+
+La pension s'ouvre à 60 ans, au taux de 20\,\% du salaire de référence, pour une personne ayant cotisé trente ans. Le taux augmente de 4 points par année de report et atteint 40\,\% à 65 ans \cite{cfdt}.
+
+Le choix de la répartition doit plus aux circonstances qu'à la doctrine. L'État de 1945 ne peut pas payer les pensions en cours tout en reconstituant des capitaux, et la répartition protège mieux contre une inflation encore très forte. Les syndicalistes, plutôt favorables à un retour à la capitalisation, finissent par s'incliner \cite{valat2022}. Pour cet historien, 1945 est moins un point de départ qu'une remise en marche : les grands principes de 1930, notamment le lien entre cotisations et pension, sont conservés.
+
+L'ambition d'un régime pour tous n'aboutit pas complètement. Le décret du 8 juin 1946 maintient les régimes spéciaux existants \cite{cor2022}. Les indépendants refusent de rejoindre les salariés et obtiennent leurs propres régimes entre 1948 et 1952. Les cadres, peu couverts à cause du plafond de cotisation, créent l'AGIRC par la convention du 14 mars 1947 \cite{valat2022}. Cette organisation par catégories professionnelles se retrouve encore dans le paysage décrit à la sous-section suivante.
+
+\subsubsection{Des pensions progressivement relevées (1956-1982)}
+
+Les premières pensions du régime général restent faibles. Au début des années 1960, la plupart sont encore inférieures au SMIG \cite{valat2022}. Le minimum vieillesse, créé en 1956, est financé par l'impôt et géré par le Fonds national de solidarité \cite{retraiteenclair}. En 1962, le rapport \textit{Politique de la vieillesse}, issu de la commission présidée par Pierre Laroque, fait de la vieillesse un sujet de politique publique \cite{conseiletat}.
+
+Les salariés non cadres obtiennent à leur tour une retraite complémentaire, avec l'UNIRS en 1957, puis l'ARRCO en 1961. La loi du 29 décembre 1972 généralise l'affiliation aux salariés du privé. Ces régimes, gérés par les partenaires sociaux, fonctionnent eux aussi par répartition \cite{valat2022}.
+
+Le régime de base s'améliore en parallèle. La loi Boulin du 31 décembre 1971 porte le taux à 65 ans de 40\,\% à 50\,\% et la durée d'assurance prise en compte de 30 à 37,5 ans. Un décret de fin 1972 calcule la pension sur les dix meilleures années, et non plus sur les dix dernières \cite{cfdt}. La loi du 24 décembre 1974 organise une compensation entre les régimes, car certains, comme celui des agriculteurs, perdent des cotisants. Enfin, l'ordonnance du 26 mars 1982 permet de partir à 60 ans au taux plein avec 37,5 années d'assurance, à compter du 1\textsuperscript{er} avril 1983 \cite{fabas2023}. D'après \cite{valat2022}, c'est surtout la croissance des Trente Glorieuses qui a rendu possible cette hausse des pensions.
+
+\subsubsection{L'équilibre financier au premier plan (1987-2010)}
+
+Un régime par répartition dépend directement du nombre de cotisants pour chaque retraité. Or ce rapport baisse : le régime général comptait environ 4,1 cotisants par retraité en 1960 et 1,3 en 2014 \cite{cnav2015}. Pour maintenir l'équilibre, il faut alors cotiser davantage, réduire les pensions ou repousser le départ. Les réformes suivantes jouent surtout sur les deux derniers leviers.
+
+Le premier signal vient de l'indexation : à partir de 1987, des lois annuelles revalorisent les pensions selon les prix \cite{cfdt}. Le Livre blanc publié le 24 avril 1991 pose ensuite le problème du vieillissement et propose d'allonger la durée de cotisation \cite{fabas2023}. La réforme Balladur de 1993 applique cette logique au secteur privé. La durée requise passe de 37,5 à 40 ans entre 1994 et 2003, le salaire de référence passe des 10 aux 25 meilleures années entre 1994 et 2008, et l'indexation sur les prix est inscrite dans la règle. La réforme crée aussi le Fonds de solidarité vieillesse, qui prend en charge les dépenses de solidarité \cite{cfdt}.
+
+Le secteur public résiste plus longtemps. Présenté le 15 novembre 1995, le plan Juppé veut étendre au public les règles du privé \cite{fabas2023}. Après plusieurs semaines de grèves, le gouvernement retire ce volet en décembre \cite{universalis1995}. Les années suivantes servent surtout à préparer l'avenir : le Fonds de réserve pour les retraites est institué par la loi de financement de la Sécurité sociale pour 1999, et le Conseil d'orientation des retraites (COR) est créé par un décret du 10 mai 2000 \cite{fabas2023}.
+
+La loi Fillon du 21 août 2003 aligne progressivement les fonctionnaires sur le régime général. Elle prévoit une hausse de la durée de cotisation d'un trimestre par an de 2009 à 2012, pour atteindre 41 ans, et introduit une décote et une surcote. Un décret du 31 octobre 2003 ouvre un départ anticipé aux personnes ayant commencé à travailler jeunes. La loi crée aussi le PERP et le PERCO, et favorise ainsi une épargne retraite facultative par capitalisation à côté des régimes par répartition \cite{fabas2023}. Les principaux régimes spéciaux, dont ceux de la SNCF, de la RATP et des industries électriques et gazières, sont réformés à leur tour à partir de juillet 2008 \cite{fabas2023}.
+
+La crise de 2008 aggrave le déficit, qui atteint 32 milliards d'euros en 2010 \cite{retraiteenclair}. La loi du 9 novembre 2010, portée par Éric Woerth, revient pour la première fois sur l'âge de 60 ans fixé en 1982. L'âge légal doit passer à 62 ans et l'âge du taux plein automatique de 65 à 67 ans, par paliers de quatre mois par génération, à partir des personnes nées le 1\textsuperscript{er} juillet 1951. Le texte contient aussi des dispositions sur la pénibilité \cite{fabas2023}. Il est adopté définitivement par le Parlement le 27 octobre 2010, malgré plusieurs journées de manifestations et des grèves dans les raffineries \cite{universalis2010}. La loi du 21 décembre 2011 accélère ensuite ce calendrier : la génération 1955 atteint 62 ans en 2017, au lieu de 2018 \cite{fabas2023}. Les réformes ultérieures ne sont pas retracées ici.
+
+Le tableau~\ref{tab:parametres_retraite} résume l'évolution des principaux paramètres du régime général.
+
+\begin{table}[H]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{@{}lcXcX@{}}
+        \toprule
+        \textbf{Réforme} & \textbf{Âge légal} & \textbf{Taux} & \textbf{Durée} & \textbf{Salaire de référence} \\
+        \midrule
+        1945 & 60 ans & 20\,\% à 60 ans, 40\,\% à 65 ans & 30 ans & 10 dernières années \\
+        1971-1972 & 60 ans & 25\,\% à 60 ans, 50\,\% à 65 ans & 37,5 ans & 10 meilleures années \\
+        1982 & 60 ans & 50\,\% dès 60 ans avec la durée requise & 37,5 ans & 10 meilleures années \\
+        1993 & 60 ans & 50\,\% avec la durée requise & 40 ans & 25 meilleures années \\
+        2003 & 60 ans & 50\,\% avec décote et surcote & 41 ans en 2012 & 25 meilleures années \\
+        2010 & 62 ans & 50\,\% avec la durée requise ou à 67 ans & Selon la génération & 25 meilleures années \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Principaux paramètres du régime général après chaque réforme, une fois celle-ci pleinement appliquée (sources : \cite{cfdt,fabas2023})}
+    \label{tab:parametres_retraite}
+\end{table}
+
+\subsection{Organisation de la retraite en France (Oui avec focus sur les produits qu'UMR utilisent)}
+
+
+\section{Le groupe VyV et UMR (Oui et présenter les chiffres en gros)}
 \label{sec:groupe_vyv_umr}
 
 
-L'assurance vie peut désigner plusieurs réalités selon le contexte. Il peut s'agir d'un contrat d'assurance ou d'une des deux grandes branches de l'assurance. De façon générale, elle regroupe les assurances dont le risque est viager, c'est-à-dire lié à la durée de vie de l'assuré. Dans le cadre de ce mémoire, nous définissons l'assurance vie comme un contrat d'assurance dont le risque est porté par la durée de vie de l'assuré et dont le but précis est la constitution d'une épargne. Nous excluons ainsi de notre périmètre les contrats de prévoyance (qui est une forme d'assurance en cas de décès couvrant aussi les risques d'invalidité, d'incapacité et de dépendance). L'assurance vie est donc un produit de long terme, permettant à l'assuré de se constituer un capital ou une rente, tout en bénéficiant, selon les contrats, d'une protection enc as de décès. L'assureur s'engage à verser un capital à l'assuré ou à ses bénéficiaires en cas de décès de l'assuré, ou à verser un capital ou une rente à l'assuré à l'échéance de son contrat. Cette mécanique est la preuve de l'inversion du cycle de production en assurance vie où l'assureur reçoit des primes de l'assuré avant des verser des prestations futures. La vraie incertitude réside au moment du rachat et du montant du rachat. Il est donc primordial pour l'assureur de bien piloter son activité afin d'assurer sa solvabilité et sa liquidité à long terme tout en créant de la valeur. Ce pilotage est l'objet de l'ALM. L'idée est de piloter conjoinctement les actifs et les passifs afin de s'assurer que l'engagement tiendra les engagements futurs.
-
-\section{La problématique : le Risk appetite framework}
+\section{La problématique : le Risk appetite framework (tu peux mettre une ligne dessus mais ça sera abordé en partie méthodo)} 
 \label{sec:problematique_risk_appetite_framework}
 
 
